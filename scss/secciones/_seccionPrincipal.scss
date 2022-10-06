@@ -1,0 +1,44 @@
+$estilos: (
+    paddingPRESET: 30px,
+    marginPRESET: 2px,
+    text-decoration-PRESET: none,
+    tamaño-FUENTE: 20px,
+    );
+
+    /* MAIN */
+    /* seccion principal */
+
+    .seccionPrincipal {
+    grid-area: seccionPrincipal;
+    background-color: grey;
+
+    .articulo {
+        text-align: center;
+
+        p {
+            color: beige;
+        }
+
+        img {
+            width: 350px;
+            max-width: 100%;
+            @extend .articulo;
+            padding: map-get($estilos,paddingPRESET);
+            margin: map-get($estilos,marginPRESET) ;
+
+    }
+
+    a {
+        color: white;
+        text-decoration: map-get($estilos,text-decoration-PRESET);
+        font-style: oblique;
+    }
+
+    .titulares {
+        padding: map-get($estilos,paddingPRESET);
+        margin: map-get($estilos,marginPRESET) ;
+        font-size: map-get($estilos,tamaño-FUENTE);
+    }
+
+}
+}

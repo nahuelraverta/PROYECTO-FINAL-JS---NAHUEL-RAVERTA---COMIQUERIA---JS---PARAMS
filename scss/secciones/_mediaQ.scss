@@ -1,0 +1,27 @@
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    .grilla2 {
+        grid-template-areas:
+            "nav nav nav"
+            ". seccionPrincipal seccionPrincipal seccionPrincipal ."
+            "footer footer footer";
+    }
+
+    .nav {
+        background-color: rebeccapurple;
+    }
+
+    .footer {
+        background-color: rebeccapurple;
+    }
+
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .columna2,
+    .columna3 {
+        margin-top: 40px;
+    }
+}

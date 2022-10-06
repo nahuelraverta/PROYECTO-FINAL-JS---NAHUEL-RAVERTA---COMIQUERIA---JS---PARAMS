@@ -1,0 +1,41 @@
+$colorFondoWeb: grey;
+
+@mixin titulos_toda_la_web($padding, $tamano_letra) {
+  padding: $padding;
+  font-size: $tamano_letra;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.separador {
+  margin: 10px;
+  padding: 10px;
+}
+
+.titular {
+  @include titulos_toda_la_web(10px, 35px);
+  text-align: center;
+}
+
+.referente {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.grilla2 {
+  background-color: $colorFondoWeb;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav nav nav"
+    "seccionPrincipal seccionPrincipal seccionPrincipal"
+    "footer footer footer";
+}

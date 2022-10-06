@@ -1,0 +1,115 @@
+/* cards  */
+
+.cards {
+  display: inline-block;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  .tarjeta {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 50px;
+    margin-top: 50px;
+    width: 350px;
+    margin-bottom: 50px;
+    a{
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  .img1 img {
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+  }
+
+  .img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: -80px;
+  }
+
+  .tarjeta:hover .img2 img {
+    border-color: darkblue;
+    transition: .7;
+  }
+  
+  .main-text {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .main-text h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+  
+  .main-text p {
+    font-size: 16px;
+    padding: 0 35px;
+  }
+
+
+  /* cartas de comics */
+
+.tarjeta2 {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 50px;
+  margin-top: 50px;
+  width: 350px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+
+  .img22 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 180px;
+    height: 240px;
+    border: 5px solid;
+    object-fit: cover;
+    transition: 0.5s;
+    margin-top: -80px;
+
+  }
+
+  &:hover .img22 img {
+    transform: scale(1.2);
+    border-color: darkblue;
+  }
+
+  .sinopsis {
+    margin-bottom: 20px;
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+
+

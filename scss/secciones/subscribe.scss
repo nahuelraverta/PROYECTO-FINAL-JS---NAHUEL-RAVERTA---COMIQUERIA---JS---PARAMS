@@ -1,0 +1,15 @@
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+    &:focus {
+        outline: none;
+      }
+  }
+  
+  .subscribe ::placeholder {
+    color: white;
+  }
+  .subscribe input[type="submit"] {
+    background-color: blue;
+    color: white;
+  }
